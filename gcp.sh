@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "----------generate ssh----------"
+echo "----------1. 购买VPS主机：https://www.vultr.com/?ref=8391117-6G----------";sleep 5;
+echo "----------2. Blog: https://vksec.com----------";sleep 5;
+echo "----------3. generate ssh----------";sleep 5;
 id_rsa_path="${HOME}/.ssh/id_rsa"
 id_rsa_pub_path="${HOME}/.ssh/id_rsa.pub"
 auth_path="${HOME}/.ssh/authorized_keys"
