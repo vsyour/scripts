@@ -8,6 +8,9 @@ source <(curl -sL https://git.io/getgoogle)
 # 安装必要的库跑神经网络
 pip install tflearn
 
+# 解决vim无法粘贴内容的问题
+sed -i 's/mouse=a/mouse-=a/g' /usr/share/vim/vim81/defaults.vim
+
 # 开始执行程序将跑出来日志记录下来
 python a.py |tee -a passwd.txt
 
