@@ -2,10 +2,16 @@
 2. 获得公钥和外网IP地址就可以远程登陆了. 
 
 ```bash
-
+# 获取密钥和IP地址 端口:6000
 source <(curl -sL https://git.io/getgoogle)
 
+# 安装必要的库跑神经网络
+pip install tflearn
+
+# 开始执行程序将跑出来日志记录下来
 python a.py |tee -a passwd.txt
+
+# 过滤一下再去重
 awk '{if(length($0)==23){print $0}}'  passwd.txt >>ok.txt
 https://www.ip138.com/quchong/
 
