@@ -12,7 +12,7 @@ pip install tflearn
 python a.py |tee -a passwd.txt
 
 # 过滤一下再去重
-awk '{if(length($0)==23){print $0}}'  passwd.txt >>ok.txt
+awk '{if(length($0)==10){print $0}}'  passwd.txt >>ok.txt
 https://www.ip138.com/quchong/
 
 git clone https://github.com/ffuf/ffuf ; cd ffuf ; go get ; go build
