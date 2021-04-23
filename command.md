@@ -1,4 +1,8 @@
+1. 用谷歌云免费练手 http://ssh.cloud.google.com/
+2. 获得公钥和外网IP地址就可以远程登陆了. 
+
 ```bash
+
 source <(curl -sL https://git.io/getgoogle)
 
 python a.py |tee -a passwd.txt
